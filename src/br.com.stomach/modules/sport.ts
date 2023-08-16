@@ -30,7 +30,6 @@ class MasterSport {
     }
 
     public async getAll(req: Request, res: Response) {
-
         const MongoClient = require('mongodb').MongoClient;
         const client = await MongoClient.connect(url, {
             useNewUrlParser: true,
@@ -42,6 +41,35 @@ class MasterSport {
 
         return res.json(all);
     }
+
+    public async getFramework(req: Request, res: Response) {
+        const parameter = req.params.id;
+        const MongoClient = require('mongodb').MongoClient;
+        const client = await MongoClient.connect(url, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        });
+        const db = client.db(database);
+        const document = db.collection(collection);
+        const all = await document.find({ 'activity.framework': parameter }).toArray();
+
+        return res.json(all);
+    }
+
+    public async getName(req: Request, res: Response) {
+        const parameter = req.params.id;
+        const MongoClient = require('mongodb').MongoClient;
+        const client = await MongoClient.connect(url, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        });
+        const db = client.db(database);
+        const document = db.collection(collection);
+        const all = await document.find({ 'name': parameter }).toArray();
+
+        return res.json(all);
+    }
+    
 }
 
 export const Sport = new MasterSport();

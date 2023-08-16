@@ -43,6 +43,14 @@ class MasterController {
         return Sport.getAll(req, res);
     }
 
+    public getFramework_sport(req: Request, res: Response) {
+        return Sport.getFramework(req, res);
+    }
+
+    public getName_sport(req: Request, res: Response) {
+        return Sport.getName(req, res);
+    }
+
     public getAll_history(req: Request, res: Response) {
         return History.getAll(req, res);
     }
