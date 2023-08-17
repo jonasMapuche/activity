@@ -10,6 +10,7 @@ const activity = require('./routes/activity');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors({origin: 'http://localhost:8100'}));
+app.use(cors({origin: 'http://api.stomach.com.br:8881'}));
 app.use('/', index);
 app.use('/activity', activity);
 app.use('/artless', artless);
