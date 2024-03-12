@@ -39,6 +39,14 @@ class MasterController {
         return Sequence.getAll(req, res);
     }
 
+    public getFramework_sequence(req: Request, res: Response) {
+        return Sequence.getFramework(req, res);
+    }
+
+    public getName_sequence(req: Request, res: Response) {
+        return Sequence.getName(req, res);
+    }
+
     public getAll_sport(req: Request, res: Response) {
         return Sport.getAll(req, res);
     }

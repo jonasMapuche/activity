@@ -42,6 +42,34 @@ class MasterSequence {
 
         return res.json(all);
     }
+
+    public async getFramework(req: Request, res: Response) {
+        const parameter = req.params.id;
+        const MongoClient = require('mongodb').MongoClient;
+        const client = await MongoClient.connect(url, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        });
+        const db = client.db(database);
+        const document = db.collection(collection);
+        const all = await document.find({ 'malware.framework': parameter }).toArray();
+
+        return res.json(all);
+    }
+
+    public async getName(req: Request, res: Response) {
+        const parameter = req.params.id;
+        const MongoClient = require('mongodb').MongoClient;
+        const client = await MongoClient.connect(url, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        });
+        const db = client.db(database);
+        const document = db.collection(collection);
+        const all = await document.find({ 'name': parameter }).toArray();
+
+        return res.json(all);
+    }
 }
 
 export const Sequence = new MasterSequence();
