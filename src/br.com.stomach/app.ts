@@ -9,7 +9,8 @@ const artless = require('./routes/artless');
 const activity = require('./routes/activity');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cors({origin: ['http://localhost:8100', 'http://api.stomach.com.br:8881', 'http://api.stomach.com.br:8890']}));
+app.use(cors({origin: ['http://localhost:8100', 'http://localhost:8101', 'http://localhost:8102',
+    'http://api.stomach.com.br:8881', 'http://api.stomach.com.br:8890', 'http://api.stomach.com.br:8892']}));
 //app.use(cors({origin: 'http://localhost:8100'}));
 app.use('/', index);
 app.use('/activity', activity);
