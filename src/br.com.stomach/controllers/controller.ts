@@ -62,7 +62,11 @@ class MasterController {
     public getAll_history(req: Request, res: Response) {
         return History.getAll(req, res);
     }
-    
+
+    public getName_history(req: Request, res: Response) {
+        return History.getName(req, res);
+    }
+
 }
 
 export const Controller = new MasterController();

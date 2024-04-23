@@ -31,7 +31,6 @@ class MasterHitory {
 
     public async getAll(req: Request, res: Response) {
 
-        //let client;
         const MongoClient = require('mongodb').MongoClient;
         const client = await MongoClient.connect(url, {
             useNewUrlParser: true,
@@ -45,6 +44,19 @@ class MasterHitory {
 
     }
 
+    public async getName(req: Request, res: Response) {
+        const parameter = req.params.id;
+        const MongoClient = require('mongodb').MongoClient;
+        const client = await MongoClient.connect(url, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        });
+        const db = client.db(database);
+        const document = db.collection(collection);
+        const all = await document.find({ 'name': parameter }).toArray();
+
+        return res.json(all);
+    }
 }
 
 export const History = new MasterHitory();
