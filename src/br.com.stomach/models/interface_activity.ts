@@ -1,13 +1,18 @@
-import { Activity } from "../models/activity";
+import { Equation } from "./equation";
+import { Formula } from "./formula";
 
 export class InterfaceActivity {
 
-    name: Array<String>;
-    activity: Activity;
+    name: Array<string>;
+    date: Date;
+    formula: Formula;
+    equation: Equation;
 
-    constructor(name: Array<string>, activity: Activity) {
+    constructor(name: Array<string>, date: Date, formula: Formula, equation: Equation) {
         this.name = name;
-        this.activity = activity;
+        this.date = date;
+        this.formula = formula;
+        this.equation = equation;
     }
 
 }

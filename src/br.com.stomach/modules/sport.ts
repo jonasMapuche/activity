@@ -1,5 +1,6 @@
 import { InterfaceActivity } from "../models/interface_activity";
-import { Activity } from "../models/activity";
+import { Equation } from "../models/equation";
+import { Formula } from "../models/formula";
 import { Request, Response } from "express";
 const url = "mongodb+srv://jonas:freedown@cluster0.28oko.azure.mongodb.net/letterDB?retryWrites=true&w=majority";
 const database = "letterDB";
@@ -11,9 +12,10 @@ class MasterSport {
 
     public async save(req: Request, res: Response) {
         const list: Array<InterfaceActivity> = [];
-        req.body.list.forEach((index: any) => {
-            const acitivy: Activity = new Activity(req.body.export, req.body.framework, index.name, index.check, index.description);
-            const interface_activity: InterfaceActivity = new InterfaceActivity(index.name, acitivy);
+        req.body.equation.forEach((index: any) => {
+            const formula: Formula = new Formula(req.body.name, req.body.initial, req.body.description);
+            const equation: Equation = new Equation(index.initial, index.prefix, index.signal, index.sequence, index.description);
+            const interface_activity: InterfaceActivity = new InterfaceActivity(index.name, req.body.date, formula, equation);
             list.push(interface_activity);
         });
 
@@ -51,7 +53,7 @@ class MasterSport {
         });
         const db = client.db(database);
         const document = db.collection(collection);
-        const all = await document.find({ 'activity.framework': parameter }).toArray();
+        const all = await document.find({ 'formula.name': parameter }).toArray();
 
         return res.json(all);
     }
