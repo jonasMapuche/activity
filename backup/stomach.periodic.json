@@ -1,0 +1,150 @@
+[{
+  "_id": {
+    "$oid": "6668424843fac530ef3ece71"
+  },
+  "initial": "H",
+  "periodic": {
+    "initial": "H",
+    "number": 1,
+    "state": "sólido",
+    "family": "hidrogênio",
+    "nome": "hidrogênio",
+    "mass": 1.0099999904632568
+  },
+  "_class": "br.com.stomach.entities.Factor"
+},
+{
+  "_id": {
+    "$oid": "666842e243fac530ef3ece72"
+  },
+  "initial": "He",
+  "periodic": {
+    "initial": "He",
+    "number": 2,
+    "state": "gasoso",
+    "family": "gases nobres",
+    "nome": "hélio",
+    "mass": 4
+  },
+  "_class": "br.com.stomach.entities.Factor"
+},
+{
+  "_id": {
+    "$oid": "666843d143fac530ef3ece73"
+  },
+  "initial": "Li",
+  "periodic": {
+    "initial": "Li",
+    "number": 3,
+    "state": "sólido",
+    "family": "metais",
+    "nome": "lítio",
+    "mass": 6.940000057220459
+  },
+  "_class": "br.com.stomach.entities.Factor"
+},
+{
+  "_id": {
+    "$oid": "6668443843fac530ef3ece74"
+  },
+  "initial": "Be",
+  "periodic": {
+    "initial": "Be",
+    "number": 4,
+    "state": "sólido",
+    "family": "metais",
+    "nome": "berílio",
+    "mass": 9.010000228881836
+  },
+  "_class": "br.com.stomach.entities.Factor"
+},
+{
+  "_id": {
+    "$oid": "6668447743fac530ef3ece75"
+  },
+  "initial": "B",
+  "periodic": {
+    "initial": "B",
+    "number": 5,
+    "state": "solido",
+    "family": "semimetais",
+    "nome": "boro",
+    "mass": 10.800000190734863
+  },
+  "_class": "br.com.stomach.entities.Factor"
+},
+{
+  "_id": {
+    "$oid": "666845df43fac530ef3ece76"
+  },
+  "initial": "C",
+  "periodic": {
+    "initial": "C",
+    "number": 6,
+    "state": "sólido",
+    "family": "ametais",
+    "nome": "carbono",
+    "mass": 12
+  },
+  "_class": "br.com.stomach.entities.Factor"
+},
+{
+  "_id": {
+    "$oid": "6668461543fac530ef3ece77"
+  },
+  "initial": "N",
+  "periodic": {
+    "initial": "N",
+    "number": 7,
+    "state": "gasoso",
+    "family": "ametais",
+    "nome": "nitrogênio",
+    "mass": 14
+  },
+  "_class": "br.com.stomach.entities.Factor"
+},
+{
+  "_id": {
+    "$oid": "6668465143fac530ef3ece78"
+  },
+  "initial": "O",
+  "periodic": {
+    "initial": "O",
+    "number": 8,
+    "state": "gasoso",
+    "family": "ametais",
+    "nome": "oxigênio",
+    "mass": 8
+  },
+  "_class": "br.com.stomach.entities.Factor"
+},
+{
+  "_id": {
+    "$oid": "6668468543fac530ef3ece79"
+  },
+  "initial": "F",
+  "periodic": {
+    "initial": "F",
+    "number": 9,
+    "state": "gasoso",
+    "family": "ametais",
+    "nome": "flúor",
+    "mass": 19
+  },
+  "_class": "br.com.stomach.entities.Factor"
+},
+{
+  "_id": {
+    "$oid": "666846bc43fac530ef3ece7a"
+  },
+  "initial": "Ne",
+  "periodic": {
+    "initial": "Ne",
+    "number": 10,
+    "state": "gasoso",
+    "family": "gases nobres",
+    "nome": "neônio",
+    "mass": 20.200000762939453
+  },
+  "_class": "br.com.stomach.entities.Factor"
+}]

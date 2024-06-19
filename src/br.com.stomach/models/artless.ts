@@ -1,21 +1,23 @@
+import { Epigraph } from "./epigraph";
+
 export class Artless {
 
-    time_line: Date;
-    framework: Array<String>;
     name: Array<String>;
+    framework: String;
     date_in: Date;
     date_out: Date;
-    check: Boolean;
-    description: String;
+    description: String; 
+    epigraph: Epigraph;
 
-    constructor(time_line: Date, framework: Array<String>, name: Array<String>, date_in: Date, date_out: Date, check: Boolean, description: String) {
-        this.time_line = time_line;
-        this.framework = framework;
+    constructor(name: Array<String>, framework: String, date_in: String, date_out: String, description: String, epigraph: Epigraph) {
         this.name = name;
-        this.date_in = date_in;
-        this.date_out = date_out;
-        this.check = check;
+        this.framework = framework;
+        const in_date: Array<String> = date_in.split('/');
+        this.date_in = new Date(in_date[2] + '-' + in_date[1] + '-' + in_date[0]);
+        const out_date: Array<String> = date_out.split('/');
+        this.date_out = new Date(out_date[2] + '-' + out_date[1] + '-' + out_date[0]);;
         this.description = description;
+        this.epigraph = epigraph;
     }
 
 }

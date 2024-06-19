@@ -1,0 +1,266 @@
+[{
+  "_id": {
+    "$oid": "66684bbc6e4196186fb75c21"
+  },
+  "initial": "1s",
+  "electron": {
+    "initial": "1s",
+    "maximun": 2,
+    "order": 1,
+    "level": "s",
+    "sequence": 1
+  },
+  "_class": "br.com.stomach.entities.Valence"
+},
+{
+  "_id": {
+    "$oid": "66684be96e4196186fb75c22"
+  },
+  "initial": "2s",
+  "electron": {
+    "initial": "2s",
+    "maximun": 2,
+    "order": 2,
+    "level": "s",
+    "sequence": 2
+  },
+  "_class": "br.com.stomach.entities.Valence"
+},
+{
+  "_id": {
+    "$oid": "66684bf66e4196186fb75c23"
+  },
+  "initial": "2p",
+  "electron": {
+    "initial": "2p",
+    "maximun": 6,
+    "order": 2,
+    "level": "p",
+    "sequence": 3
+  },
+  "_class": "br.com.stomach.entities.Valence"
+},
+{
+  "_id": {
+    "$oid": "66684c0b6e4196186fb75c24"
+  },
+  "initial": "3s",
+  "electron": {
+    "initial": "3s",
+    "maximun": 2,
+    "order": 3,
+    "level": "s",
+    "sequence": 4
+  },
+  "_class": "br.com.stomach.entities.Valence"
+},
+{
+  "_id": {
+    "$oid": "66684c326e4196186fb75c25"
+  },
+  "initial": "3p",
+  "electron": {
+    "initial": "3p",
+    "maximun": 6,
+    "order": 3,
+    "level": "p",
+    "sequence": 5
+  },
+  "_class": "br.com.stomach.entities.Valence"
+},
+{
+  "_id": {
+    "$oid": "66684c6b6e4196186fb75c26"
+  },
+  "initial": "4s",
+  "electron": {
+    "initial": "4s",
+    "maximun": 2,
+    "order": 4,
+    "level": "s",
+    "sequence": 6
+  },
+  "_class": "br.com.stomach.entities.Valence"
+},
+{
+  "_id": {
+    "$oid": "66684c946e4196186fb75c27"
+  },
+  "initial": "3d",
+  "electron": {
+    "initial": "3d",
+    "maximun": 10,
+    "order": 3,
+    "level": "d",
+    "sequence": 7
+  },
+  "_class": "br.com.stomach.entities.Valence"
+},
+{
+  "_id": {
+    "$oid": "66684cbf6e4196186fb75c28"
+  },
+  "initial": "4p",
+  "electron": {
+    "initial": "4p",
+    "maximun": 6,
+    "order": 4,
+    "level": "p",
+    "sequence": 8
+  },
+  "_class": "br.com.stomach.entities.Valence"
+},
+{
+  "_id": {
+    "$oid": "66684cdc6e4196186fb75c29"
+  },
+  "initial": "5s",
+  "electron": {
+    "initial": "5s",
+    "maximun": 2,
+    "order": 5,
+    "level": "s",
+    "sequence": 9
+  },
+  "_class": "br.com.stomach.entities.Valence"
+},
+{
+  "_id": {
+    "$oid": "66684d016e4196186fb75c2a"
+  },
+  "initial": "4d",
+  "electron": {
+    "initial": "4d",
+    "maximun": 10,
+    "order": 4,
+    "level": "d",
+    "sequence": 10
+  },
+  "_class": "br.com.stomach.entities.Valence"
+},
+{
+  "_id": {
+    "$oid": "66684d206e4196186fb75c2b"
+  },
+  "initial": "5p",
+  "electron": {
+    "initial": "5p",
+    "maximun": 6,
+    "order": 5,
+    "level": "p",
+    "sequence": 11
+  },
+  "_class": "br.com.stomach.entities.Valence"
+},
+{
+  "_id": {
+    "$oid": "66684d3c6e4196186fb75c2c"
+  },
+  "initial": "6s",
+  "electron": {
+    "initial": "6s",
+    "maximun": 2,
+    "order": 6,
+    "level": "s",
+    "sequence": 12
+  },
+  "_class": "br.com.stomach.entities.Valence"
+},
+{
+  "_id": {
+    "$oid": "66684d636e4196186fb75c2d"
+  },
+  "initial": "4f",
+  "electron": {
+    "initial": "4f",
+    "maximun": 14,
+    "order": 4,
+    "level": "f",
+    "sequence": 13
+  },
+  "_class": "br.com.stomach.entities.Valence"
+},
+{
+  "_id": {
+    "$oid": "66684d8f6e4196186fb75c2e"
+  },
+  "initial": "5d",
+  "electron": {
+    "initial": "5d",
+    "maximun": 10,
+    "order": 5,
+    "level": "d",
+    "sequence": 14
+  },
+  "_class": "br.com.stomach.entities.Valence"
+},
+{
+  "_id": {
+    "$oid": "66684db76e4196186fb75c2f"
+  },
+  "initial": "6p",
+  "electron": {
+    "initial": "6p",
+    "maximun": 6,
+    "order": 6,
+    "level": "p",
+    "sequence": 15
+  },
+  "_class": "br.com.stomach.entities.Valence"
+},
+{
+  "_id": {
+    "$oid": "66684ddc6e4196186fb75c30"
+  },
+  "initial": "7s",
+  "electron": {
+    "initial": "7s",
+    "maximun": 2,
+    "order": 7,
+    "level": "s",
+    "sequence": 16
+  },
+  "_class": "br.com.stomach.entities.Valence"
+},
+{
+  "_id": {
+    "$oid": "66684dfb6e4196186fb75c31"
+  },
+  "initial": "5f",
+  "electron": {
+    "initial": "5f",
+    "maximun": 14,
+    "order": 5,
+    "level": "f",
+    "sequence": 17
+  },
+  "_class": "br.com.stomach.entities.Valence"
+},
+{
+  "_id": {
+    "$oid": "66684e396e4196186fb75c32"
+  },
+  "initial": "6d",
+  "electron": {
+    "initial": "6d",
+    "maximun": 10,
+    "order": 6,
+    "level": "d",
+    "sequence": 18
+  },
+  "_class": "br.com.stomach.entities.Valence"
+},
+{
+  "_id": {
+    "$oid": "66684e5d6e4196186fb75c33"
+  },
+  "initial": "7p",
+  "electron": {
+    "initial": "7p",
+    "maximun": 6,
+    "order": 7,
+    "level": "p",
+    "sequence": 19
+  },
+  "_class": "br.com.stomach.entities.Valence"
+}]

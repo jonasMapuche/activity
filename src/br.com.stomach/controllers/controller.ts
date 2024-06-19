@@ -1,6 +1,6 @@
 import { Sequence } from "../modules/sequence";
 import { History } from "../modules/history";
-import { Sport } from "../modules/sport";
+import { Physical } from "../modules/physical";
 import { Request, Response } from "express";
 
 class MasterController {
@@ -11,9 +11,9 @@ class MasterController {
         });
     }
 
-    public hello_sport(req: Request, res: Response) {
+    public hello_physical(req: Request, res: Response) {
         return res.json({
-            response: Sport.hello
+            response: Physical.hello
         });
     }
 
@@ -27,8 +27,8 @@ class MasterController {
         return Sequence.save(req, res);
     }
 
-    public async save_sport(req: Request, res: Response) {
-        return Sport.save(req, res);
+    public async save_physical(req: Request, res: Response) {
+        return Physical.save(req, res);
     }
 
     public async save_history(req: Request, res: Response) {
@@ -47,16 +47,16 @@ class MasterController {
         return Sequence.getName(req, res);
     }
 
-    public getAll_sport(req: Request, res: Response) {
-        return Sport.getAll(req, res);
+    public getAll_physical(req: Request, res: Response) {
+        return Physical.getAll(req, res);
     }
 
-    public getFramework_sport(req: Request, res: Response) {
-        return Sport.getFramework(req, res);
+    public getFramework_physical(req: Request, res: Response) {
+        return Physical.getFramework(req, res);
     }
 
-    public getName_sport(req: Request, res: Response) {
-        return Sport.getName(req, res);
+    public getName_physical(req: Request, res: Response) {
+        return Physical.getName(req, res);
     }
 
     public getAll_history(req: Request, res: Response) {
@@ -65,6 +65,10 @@ class MasterController {
 
     public getName_history(req: Request, res: Response) {
         return History.getName(req, res);
+    }
+
+    public postRange_history(req: Request, res: Response) {
+        return History.postRange(req, res);
     }
 
 }

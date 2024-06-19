@@ -1,17 +1,16 @@
+import { Equation } from "./equation";
+import { Formula } from "./formula";
+
 export class Activity {
 
-    export: Date;
-    framework: Array<String>;
-    name: Array<String>;
-    check: Boolean;
-    description: String;
-    
-    constructor(time_line: Date, framework: Array<String>, name: Array<String>, check: Boolean, description: String) {
-        this.export = time_line;
-        this.framework = framework;
+    name: Array<string>;
+    formula: Formula;
+    equation: Equation;
+
+    constructor(name: Array<string>, formula: Formula, equation: Equation) {
         this.name = name;
-        this.check = check;
-        this.description = description;
+        this.formula = formula;
+        this.equation = equation;
     }
 
 }

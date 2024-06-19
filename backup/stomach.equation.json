@@ -1,0 +1,116 @@
+[{
+  "_id": {
+    "$oid": "666850336e4196186fb75c34"
+  },
+  "name": [
+    "bicarbonato de sódio"
+  ],
+  "type": "sal ácido",
+  "initial": "NaHCO3",
+  "element": [
+    {
+      "name": "Na",
+      "multiplier": 1,
+      "amount": 1,
+      "valence": 0
+    },
+    {
+      "name": "H",
+      "multiplier": 1,
+      "amount": 1,
+      "valence": 0
+    },
+    {
+      "name": "C",
+      "multiplier": 1,
+      "amount": 1,
+      "valence": 0
+    },
+    {
+      "name": "O",
+      "multiplier": 1,
+      "amount": 3,
+      "valence": 0
+    }
+  ],
+  "_class": "br.com.stomach.entities.Equation"
+},
+{
+  "_id": {
+    "$oid": "666851b46e4196186fb75c35"
+  },
+  "name": [
+    "ácido hipocloroso",
+    "água sanitária",
+    "cloro líquido"
+  ],
+  "type": "oxiácido",
+  "initial": "HClO",
+  "element": [
+    {
+      "name": "H",
+      "multiplier": 1,
+      "amount": 1,
+      "valence": 0
+    },
+    {
+      "name": "Cl",
+      "multiplier": 1,
+      "amount": 1,
+      "valence": 0
+    },
+    {
+      "name": "O",
+      "multiplier": 1,
+      "amount": 1,
+      "valence": 0
+    }
+  ],
+  "_class": "br.com.stomach.entities.Equation"
+},
+{
+  "_id": {
+    "$oid": "666851c26e4196186fb75c36"
+  },
+  "name": [
+    "hidroxila",
+    "hidroxilo",
+    "oxidrila"
+  ],
+  "type": "base",
+  "initial": "OH-",
+  "element": [
+    {
+      "name": "H",
+      "multiplier": 1,
+      "amount": 1,
+      "valence": 0
+    },
+    {
+      "name": "O",
+      "multiplier": 1,
+      "amount": 1,
+      "valence": -1
+    }
+  ],
+  "_class": "br.com.stomach.entities.Equation"
+},
+{
+  "_id": {
+    "$oid": "666851d66e4196186fb75c37"
+  },
+  "name": [
+    "hídron"
+  ],
+  "type": "ácido",
+  "initial": "H+",
+  "element": [
+    {
+      "name": "H",
+      "multiplier": 1,
+      "amount": 1,
+      "valence": 1
+    }
+  ],
+  "_class": "br.com.stomach.entities.Equation"
+}]
