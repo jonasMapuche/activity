@@ -2,6 +2,7 @@ import { Sequence } from "../modules/sequence";
 import { History } from "../modules/history";
 import { Physical } from "../modules/physical";
 import { Request, Response } from "express";
+import { Lesson } from "../modules/lesson";
 
 class MasterController {
 
@@ -23,6 +24,12 @@ class MasterController {
         });
     }
 
+    public hello_seminar(req: Request, res: Response) {
+        return res.json({
+            response: Lesson.hello
+        });
+    }
+
     public async save_sequence(req: Request, res: Response) {
         return Sequence.save(req, res);
     }
@@ -35,16 +42,32 @@ class MasterController {
         return History.save(req, res);
     }
 
+    public async save_seminar(req: Request, res: Response) {
+        return Lesson.save(req, res);
+    }
+
     public getAll_sequence(req: Request, res: Response) {
         return Sequence.getAll(req, res);
+    }
+
+    public getAll_seminar(req: Request, res: Response) {
+        return Lesson.getAll(req, res);
     }
 
     public getFramework_sequence(req: Request, res: Response) {
         return Sequence.getFramework(req, res);
     }
 
+    public getFramework_seminar(req: Request, res: Response) {
+        return Lesson.getFramework(req, res);
+    }
+
     public getName_sequence(req: Request, res: Response) {
         return Sequence.getName(req, res);
+    }
+
+    public getName_seminar(req: Request, res: Response) {
+        return Lesson.getName(req, res);
     }
 
     public getAll_physical(req: Request, res: Response) {
