@@ -4,10 +4,10 @@ var cors = require('cors');
 const app = express();
 //Rotas
 const index = require('./routes/index');
-const malware = require('./routes/malware');
-const artless = require('./routes/artless');
-const activity = require('./routes/activity');
-const seminar = require('./routes/seminar');
+const malware = require('./routes/malwareRoute');
+const artless = require('./routes/artlessRoute');
+const activity = require('./routes/activityRoute');
+const seminar = require('./routes/seminarRoute');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors({origin: ['http://localhost:8100', 'http://localhost:8101', 'http://localhost:8102',

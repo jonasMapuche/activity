@@ -1,8 +1,8 @@
-import { Sequence } from "../modules/sequence";
-import { History } from "../modules/history";
-import { Physical } from "../modules/physical";
+import { Sequence } from "../modules/malwareModule";
+import { History } from "../modules/artlessModule";
+import { Physical } from "../modules/activityModule";
 import { Request, Response } from "express";
-import { Lesson } from "../modules/lesson";
+import { Lesson } from "../modules/seminarModule";
 
 class MasterController {
 
@@ -19,6 +19,7 @@ class MasterController {
     }
 
     public hello_history(req: Request, res: Response) {
+        //console.log("passei aqui 2")
         return res.json({
             response: History.hello
         });
